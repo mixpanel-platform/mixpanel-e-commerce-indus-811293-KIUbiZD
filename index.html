@@ -54,7 +54,7 @@
         resultObject.Total = totalResults.values();
         MP.api.segment(eventName, uniqueParams).done(function(uniqueResults) {
           resultObject.Unique = uniqueResults.values();
-          chart.setData(resultObject);
+          chart.MPChart('setData', resultObject);
         })
       });
     }
