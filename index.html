@@ -40,18 +40,14 @@
       var totalParams = {
         from: moment().subtract('30', 'days'),
         to: moment(),
-        limit: '10',
         type: 'general',
         unit: 'day',
-        where: 'properties["mp_country_code"] == "US"',
       };
       var uniqueParams = {
         from: moment().subtract('30', 'days'),
         to: moment(),
-        limit: '10',
         type: 'unique',
         unit: 'day',
-        where: 'properties["mp_country_code"] == "US"',
       };
       var resultObject = {'Unique': {}, 'Total': {}};
       MP.api.segment(eventName, totalParams).done(function(totalResults) {
