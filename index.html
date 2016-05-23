@@ -11,7 +11,7 @@
     <div class="mixpanel-platform-section">
       <h1>iOS Main Screen Banner View</h1>
       <div style="clear: both;"></div>
-      <div id="iOSmainscreenbannerview"></div>
+      <div id="iOSmainscreenbannerview" class="report"></div>
       <h1>iOS Main Screen Banner Click</h1>
       <div style="clear: both;"></div>
       <div id="iOSmainscreenbannerclick" class="report"></div>
@@ -66,10 +66,10 @@
     
       runQuery();
        function runQuery() {
-         getUniqueAndTotal('nameBufferThingEvent', '#example-div-one');
-         getUniqueAndTotal('event2', '#div2');
-         getUniqueAndTotal('event3', '#div3');
-         getUniqueAndTotal('event4', '#div4');
+         getUniqueAndTotal('MainScreenBannerView', '#iOSmainscreenbannerview');
+         getUniqueAndTotal('MainScreenBannerClick', '#iOSmainscreenbannerclick');
+         getUniqueAndTotal('OffersScreenBannerView', '#iOSoffersscreenbannerview');
+         getUniqueAndTotal('OffersScreenBannerClick', '#iOSoffersscreenbannerclick');
         
         }
 
